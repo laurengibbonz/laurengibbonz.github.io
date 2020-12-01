@@ -2,7 +2,15 @@
 <html>
     <head>
         <title>LG Web I</title>
-        <link rel="icon" type="image/png" href="assets/favicon.png?">
+        <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <style>
+        #green-box {
+            background-color: #000000;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
     </head>
     <body>
         <h1>TEST</h1>
@@ -10,5 +18,24 @@
         <h3>Fetch</h3>
         <h3>Git Update</h3>
         <h4>Git Update</h4>
+        <div id="green-box"></div>
+        <button id="trigger">Change</button>
+    <script>
+    (function changeColor(myColor) {
+        if(!myColor) {
+            myColor = 'green';
+        }
+        document.getElementById('green-box').style.backgroundColor = myColor;
+        console.log('green');
+    })();
+
+    // changeColor('green');
+
+    document.getElementById('trigger').addEventListener('click', function(){
+        changeColor('pink');
+    });
+
+    </script>
+
     </body>
 </html>
