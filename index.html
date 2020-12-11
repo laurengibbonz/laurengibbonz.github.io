@@ -1,41 +1,263 @@
 <!DOCTYPE html>
 <html>
+
     <head>
-        <title>LG Web I</title>
-        <link rel="icon" type="image/png" href="assets/favicon.png">
-    
-    <style>
-        #green-box {
-            background-color: #000000;
-            height: 100px;
-            width: 100px;
-        }
-    </style>
+        <title>Wu Language Gallery</title>
+        <link rel="stylesheet" type = "text/css" href="style.css">
+        <link rel="icon" href="assets/wuicon.png">
+
     </head>
+
     <body>
-        <h1>TEST</h1>
-        <h1>Merge</h1>
-        <h3>Fetch</h3>
-        <h3>Git Update</h3>
-        <h4>Git Update</h4>
-        <div id="green-box"></div>
-        <button id="trigger">Change</button>
-    <script>
-    (function changeColor(myColor) {
-        if(!myColor) {
-            myColor = 'green';
-        }
-        document.getElementById('green-box').style.backgroundColor = myColor;
-        console.log('green');
-    })();
 
-    // changeColor('green');
 
-    document.getElementById('trigger').addEventListener('click', function(){
-        changeColor('pink');
-    });
+        <nav>
+            <ul>
+              <li><a data-link="section-1">1</a></li>
+              <li><a data-link="section-2">2</a></li>
+              <li><a data-link="section-3">3</a></li>
+              <li><a data-link="section-4">4</a></li>
+              <li><a data-link="section-5">5</a></li>
+              <li><a data-link="section-6">6</a></li>
+              <li><a data-link="section-7">7</a></li>
+            </ul>
+        </nav>
+        
+        <section id="section-1" style="padding-top:0.5%">
 
-    </script>
+            <div class="video-container">
+                <video class="homebgvideo" src ="assets/homebgvideo.mp4" autoplay loop></video>
+            </div>
+           
+            <div class="container">
+                <div class = "intro">
+                    <!-- <h2>Welcome to Wu Virtual Gallery</h2> -->
+                    
+                    <div id="start" onclick="start()" >
+                    <h3>START YOUR JOUNREY</h3>
+                    </div>
+                </div>
+  
+            </div>    
+            
 
+
+
+        </section>
+
+        <section id="section-2">
+                <div class="quizContainer">
+                    <div class = "question">
+                        <h2>Question 1</h2>
+                        <question>Have you ever heard of the language Wu?</question>
+                    </div>
+                    
+
+                </div>
+
+
+
+                    <!-- <div class="quizLeft">
+                        <img src="animation/canele.gif">
+                    </div>
+                    <div class="quizRight">
+                        <img class="questionImg" src="images/quizImages/question.png">
+                        <div class="question">
+                            <h2>Question 1</h2>
+                            <article>
+                                <p>How did the Franch dessert, Canelé,</br>come out?</p>
+                            </article>
+                        </div>
+
+                        <div class="ansA" onclick="correctAns()">
+                            <img class="ansImgCorrect" src="images/quizImages/ans.png">
+                            <div class="ansWord">
+                                <p>A baking failure by a nun in a French</br>monastery in the 16 Century.</p>
+                            </div>
+                        </div>
+
+                        <div class="ansB" onclick="wrongAns()">
+                            <img class="ansImgWrong" src="images/quizImages/ans.png">
+                            <div class="ansWord">
+                                <p>A gift from a noble to show affection</br>for a woman in the 15 Century.</p>
+                            </div>
+                        </div>
+                        <div class="next" onclick="goToQ2()">
+                            <img src="images/quizImages/next.png" >
+                        </div> 
+                    </div> -->
+                
+        </section>
+
+        <section id="section-3">
+            <div class="quizContainer">
+                <div class = "question">
+                    <h2>Question 2</h2>
+                    <question>Have you ever heard of Language Wu?</question>
+                </div>
+
+
+
+
+                <!-- <div class="quizLeft">
+                    <img src="animation/ginger.gif">
+                </div>
+                <div class="quizRight">
+                    <img class="questionImg" src="images/quizImages/question.png">
+                    <div class="question">
+                        <h2>Question 2</h2>
+                        <article>
+                                <p>Whose appearance is the basic of</br>gingerbread man’s look?</p>
+                            </article>
+                    </div>
+                    <div class="ansA" onclick="correctAns()">
+                        <img class="ansImgCorrect" src="images/quizImages/ans.png">
+                        <div class="ansWord">
+                            <p style="margin-top:2.5vw">Queen Elizabeth I</p>
+                        </div>
+                    </div>
+                    <div class="ansB" onclick="wrongAns()">
+                        <img class="ansImgWrong" src="images/quizImages/ans.png">
+                        <div class="ansWord">
+                            <p style="margin-top:2.5vw">Queen Elizabeth II</p>
+                        </div>
+                    </div>
+                    <div class="next" onclick="goToQ3()">
+                        <img  src="images/quizImages/next.png" >
+                    </div> 
+                </div> -->
+            </div>
+        </section>
+
+        <section id="section-4">
+            <div class="quizContainer">
+                <div class = "question">
+                    <h2>Question 3</h2>
+                    <answer>How many people do you think speak Wu in the world?</answer>
+                </div>
+
+                <!-- <div class="quizLeft">
+                    <img src="animation/tiramisu.gif">
+                </div>
+                <div class="quizRight">
+                    <img class="questionImg" src="images/quizImages/question.png">
+                    <div class="question">
+                        <h2>Question 3</h2>
+                        <article>
+                                <p>What does “Tiramisù” originally mean</br>in Italian?</p>
+                            </article>
+                    </div>
+                    <div class="ansA" onclick="correctAns()">
+                        <img class="ansImgCorrect" src="images/quizImages/ans.png">
+                        <div class="ansWord">
+                            <p style="margin-top:2.5vw">Pick me up</p>
+                        </div>
+                    </div>
+                    <div class="ansB" onclick="wrongAns()">
+                        <img class="ansImgWrong" src="images/quizImages/ans.png">
+                        <div class="ansWord">
+                            <p style="margin-top:2.5vw">Let me go</p>
+                        </div>
+                    </div>
+                    <div class="next" onclick="goToQ4()">
+                        <img  src="images/quizImages/next.png" >
+                    </div> 
+                </div> -->
+            </div>
+        </section>
+
+        <section id="section-5">
+            <div class="quizContainer">
+                <h5>HISTORY OF WU</h5>
+
+                <h6>If you are willing to know more about the language Wu,<br/>
+                    here is the Link.</h6>
+                <a href=“Link” target=“_blank”>https://en.wikipedia.org/wiki/Wu_Chinese</a>
+                <!-- <a href = "https://en.wikipedia.org/wiki/Wu_Chinese"> More Link to Wikipedia</a> -->
+
+            </div>
+            <div class = "ticket">
+                <img src = "assets/ticket.png">
+            </div>
+                <!-- <div class="quizLeft">
+                    <img src="animation/chocolate.gif">
+                </div>
+                <div class="quizRight">
+                    <img class="questionImg" src="images/quizImages/question.png">
+                    <div class="question">
+                        <h2>Question 4</h2>
+                        <article>
+                                <p>What does “Chocolate” mean in</br>Greek?</p>
+                            </article>
+                    </div>
+                    <div class="ansA" onclick="correctAns()">
+                        <img class="ansImgCorrect" src="images/quizImages/ans.png">
+                        <div class="ansWord">
+                            <p style="margin-top:2.5vw">Food of the Gods</p>
+                        </div>
+                    </div>
+                    <div class="ansB" onclick="wrongAns()">
+                        <img class="ansImgWrong" src="images/quizImages/ans.png">
+                        <div class="ansWord">
+                            <p style="margin-top:2.5vw">Food of the Ghosts</p>
+                        </div>
+                    </div>
+                    <div class="next" onclick="goToQ5()">
+                        <img  src="images/quizImages/next.png" >
+                    </div> 
+                </div> -->
+            </div>
+        </section>
+
+        <section id="section-6" style="padding-bottom:0%">
+            <div class="quizContainer">
+                <div class = "firstpicture">
+                    <img src = "assets/time.jpg">
+                </div>
+
+                <div class = "secondpicture">
+                    <img src = "assets/time.jpg">
+                </div>
+
+                <div class = "thirdpicture">
+                    <img src = "assets/time.jpg">
+                </div>
+
+
+
+            </div>
+        </section>
+
+            
+        </div>
+
+        </section>
+
+        <section id="section-7" style="padding-top:0.5%">
+        <div class="background">
+            <video class = "endbgvideo" src = "video.assets/endbgvideo.mp4"></video>
+        </div>
+        <div class="container">
+            <div class="words">
+                <h2>Thanks for visiting.<br/>Hope you enjoyed this tour.</h2>
+                
+            </div>
+            <h4>
+                <a href = "https://vimeo.com/user58243586"> More from this Airtist </a> 
+            </h4>
+        </div>
+        
+        </div>   
+        <!-- <div id="home" onclick="goToHome()" >
+                <img src="images/home.png" > -->
+        </div>
+        </section>
+
+
+
+
+        <script src = "Java.js"></script>
     </body>
+
 </html>
+
